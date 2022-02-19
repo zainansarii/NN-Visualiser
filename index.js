@@ -5,6 +5,19 @@
 // sign of that sum passed through an activation function
 
 
+class Network {
+
+    layers = []
+
+    constructor(nInput, nHidden, nOutput){
+        this.inputNodes = nInput;
+        this.hiddenNodes = nHidden;
+        this.outputNodes = nOutput;
+
+        this.isTrained = false;
+    }
+}
+
 class Node {
 
     weights = []
